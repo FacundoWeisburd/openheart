@@ -1,0 +1,36 @@
+/* Estilos básicos extra para mood tracker y transición */
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+#moodDisplay {
+  user-select: none;
+  transition: background-color 0.4s ease;
+}
+
+/* Mood Colors */
+
+#moodDisplay.happy {
+  background-color: #fcd34d; /* amarillo */
+}
+
+#moodDisplay.sad {
+  background-color: #60a5fa; /* azul */
+}
+
+#moodDisplay.angry {
+  background-color: #f87171; /* rojo */
+}
+
+#moodDisplay.tired {
+  background-color: #a78bfa; /* morado */
+}
+
+#moodDisplay.smoked {
+  background-color: #9ca3af; /* gris humo */
+}
+
+#moodDisplay.neutral {
+  background-color: #d1d5db; /* gris claro */
+}

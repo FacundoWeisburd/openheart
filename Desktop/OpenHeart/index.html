@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenHeart</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      defer
+    ></script>
+
+    <!-- Nuestro CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Nuestro JS -->
+    <script src="script.js" defer></script>
+  </head>
+  <body
+    class="bg-white dark:bg-gray-900 transition-colors duration-500 text-gray-900 dark:text-gray-100 flex flex-col items-center justify-center min-h-screen px-4"
+  >
+    <header class="mb-8 text-center">
+      <h1 class="text-4xl font-semibold mb-2">OpenHeart</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400">
+        Privado para vos y tu pareja
+      </p>
+    </header>
+
+    <!-- Contador de tiempo juntos -->
+    <section class="mb-10">
+      <div
+        class="bg-gradient-to-r from-pink-400 via-red-500 to-yellow-400 rounded-xl p-8 shadow-lg max-w-md w-full text-center"
+      >
+        <h2 class="text-3xl font-bold mb-4">Tiempo juntos</h2>
+        <p id="contador" class="text-5xl font-mono tracking-widest"></p>
+      </div>
+    </section>
+
+    <!-- Mood Tracker -->
+    <section class="max-w-md w-full">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Mood Tracker</h2>
+      <div
+        id="moodDisplay"
+        class="mx-auto mb-6 w-32 h-32 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-6xl cursor-pointer select-none shadow-md transition-colors duration-300"
+        title="Haz clic para cambiar tu estado de ánimo"
+        aria-label="Estado de ánimo actual"
+        role="img"
+      >
+        😐
+      </div>
+
+      <div class="flex justify-center flex-wrap gap-4">
+        <button class="moodBtn text-4xl" data-mood="happy" aria-label="Feliz">
+          😊
+        </button>
+        <button class="moodBtn text-4xl" data-mood="sad" aria-label="Triste">
+          😢
+        </button>
+        <button class="moodBtn text-4xl" data-mood="angry" aria-label="Enojado">
+          😠
+        </button>
+        <button class="moodBtn text-4xl" data-mood="tired" aria-label="Cansado">
+          😴
+        </button>
+        <button class="moodBtn text-4xl" data-mood="smoked" aria-label="Fumado">
+          😵‍💫
+        </button>
+        <button
+          class="moodBtn text-4xl"
+          data-mood="neutral"
+          aria-label="Neutral"
+        >
+          😐
+        </button>
+      </div>
+    </section>
+
+    <footer class="mt-12 text-center text-sm text-gray-500 dark:text-gray-400">
+      &copy; 2025 OpenHeart. Todos los derechos reservados.
+    </footer>
+  </body>
+</html>
